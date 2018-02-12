@@ -12,23 +12,25 @@ require_once __DIR__ . '/../vendor/autoload.php'; 	// Autoload files using Compo
 
 use PHPLoan\Loan;
 
+$loan = new Loan;
+
 // function calulatePrincipal( $P , $r, $n )
-$result =  Loan::calculateMonthlyPayment( 60000, 9, 360 );
+$result = $loan->calculateMonthlyPayment( 60000 , 9, 360 );
 echo number_format($result, 2, ".", ",") . PHP_EOL;
 
 
 // function calulatePrincipal( $n, $r, $A )
-$result = Loan::calculatePrincipal( 360, 9, 482.77357 );
+$result = $loan->calculatePrincipal( 360, 9, 482.77357 );
 echo number_format($result, 2, ".", ",") . PHP_EOL;
 
 
 // function calulateNumPayments( $P, $r, $A )
-$result = Loan::calculateNumPayments( 60000, 9, 482.77357 );
+$result = $loan->calculateNumPayments( 60000, 9, 482.77357 );
 echo $result . PHP_EOL;
 
 
 // function getSchedule( $P , $r, $n )
-$schedule = Loan::getSchedule( 60000, 9, 12 );
+$schedule = $loan->getSchedule( 60000, 9, 12 );
 
 echo "<table>";
 
@@ -43,5 +45,9 @@ foreach ($schedule as $value) {
 }
 
 echo "</table>";
+
+
+
+
 
 
