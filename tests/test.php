@@ -34,13 +34,13 @@ $schedule = $loan->getSchedule( 60000, 9, 12 );
 
 echo "<table>";
 
-foreach ($schedule as $value) {
+foreach ($schedule as $key) {
 	echo "<tr>";
- 	echo "<td>" . $value->numpayment 	. "</td>";
- 	echo "<td>" . $value->payment 		. "</td>";
- 	echo "<td>" . $value->interest 		. "</td>";
- 	echo "<td>" . $value->principal 	. "</td>";
- 	echo "<td>" . $value->balance 		. "</td>";
+ 	echo "<td>" . $key->numpayment 	. "</td>";
+ 	echo "<td>" . $key->payment 	. "</td>";
+ 	echo "<td>" . $key->interest 	. "</td>";
+ 	echo "<td>" . $key->principal 	. "</td>";
+ 	echo "<td>" . $key->balance 	. "</td>";
  	echo "</tr>";
 }
 
