@@ -1,0 +1,17 @@
+{
+    "name": "pqrs/phploan",
+    "description": "Calculates the monthly repayments of a loan",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pqrs",
+            "email": "pqrs@pqrs.es"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "PHPLoan": "src/"
+        }
+    }
+}
