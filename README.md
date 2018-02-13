@@ -129,7 +129,19 @@ You can find some uses for these functions in [tests folder](tests).
 
 PHP > 5.6
 
-If you want to use phploan in 5.x PHP versions lower than 5.6, probably the only thing you have to change is the use of exponential expressions in [Loan.php](src/PHPLoan/Loan.php). Change ** for the function **pow()**.
+Not tested, but if you want to use phploan in 5.x PHP versions lower than 5.6, probably the only thing you have to change is the use of exponential expressions in [Loan.php](src/PHPLoan/Loan.php). Change ** for the function **pow()**:
+
+``` php
+// In method calculateMonthlyPayment( $P , $r, $n )
+
+    $A = $P * (( $i * pow((1 + $i), $n) ) / ( pow((1 + $i), $n) - 1 ));
+
+// In method calculatePrincipal( $n, $r, $A )
+
+    $P = $A * ( pow((1 + $i), $n) - 1 ) / ( $i * (pow((1 + $i), $n) ));
+
+```
+
 
 
 ## Contributing
