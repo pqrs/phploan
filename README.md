@@ -33,7 +33,7 @@ $n    Number of payments (months)
 $A    Monthly payment amount
 ```
 
-**function calculateMonthlyPayment( $P, $r, $n )**
+**method calculateMonthlyPayment( $P, $r, $n )**
 
 Calculates the amount of every monthly payment based on the loan principal, interest rate and number of payments.
 
@@ -46,7 +46,7 @@ echo number_format($result, 2, ".", ",") . PHP_EOL;
 // Prints 482.77
 ```
 
-**function calculatePrincipal( $n, $r, $A )**
+**method calculatePrincipal( $n, $r, $A )**
 
 Calculates the loan principal based on the number of payments, interest rate and payment amount.
 
@@ -62,7 +62,7 @@ echo number_format($result, 2, ".", ",") . PHP_EOL;
 
 
 
-**function calculateNumPayments( $P, $r, $A )**
+**method calculateNumPayments( $P, $r, $A )**
 
 Calculates the number of payments based on the principal, interest rate and payment amount.
 
@@ -75,7 +75,7 @@ echo $result . PHP_EOL;
 // Prints 360
 ```
 
-**function getSchedule( $P, $r, $n )**
+**method getSchedule( $P, $r, $n )**
 
 Returns an object with the loan payment schedule.
 
