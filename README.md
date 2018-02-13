@@ -11,7 +11,15 @@ Also provides a method to return the loan payment schedule.
 ## Installation
 
 ```
-git clone https://github.com/pqrs/phploan.git
+composer require pqrs/phploan=dev-master
+```
+
+Alternatively, add the dependency directly to your composer.json file:
+
+```
+"require": {
+    "pqrs/phploan": "dev-master"
+}
 ```
 
 Then add to your php code:
