@@ -105,7 +105,7 @@ Contributions are very welcome!
 
 ## Credits
 
-**Alvaro Piqueras** - [pqrs](https://github.com/pqrs)
+**Copyright © 2018 Alvaro Piqueras** - [pqrs](https://github.com/pqrs)
 
 ## License
 
