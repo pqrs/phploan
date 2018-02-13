@@ -124,6 +124,14 @@ echo "</table>";
 
 You can find some uses for these functions in [tests folder](tests).
 
+
+## Prerequisites
+
+PHP > 5.6
+
+If you want to use phploan in PHP versions lower than 5.6, probably the only thing you have to change is the use of exponential expressions in [Loan.php](src/Loan.php). Change ** for the function **pow()**.
+
+
 ## Contributing
 
 Contributions are very welcome!
