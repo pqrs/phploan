@@ -50,7 +50,7 @@ $loan = new Loan;
 $result = $loan->calculatePrincipal( 360, 9, 482.77357 );
 echo number_format($result, 2, ".", ",") . PHP_EOL;
 
-/// Prints 60,000.00
+// Prints 60,000.00
 
 ```
 
@@ -91,6 +91,8 @@ foreach ($schedule as $key) {
 }
 
 echo "</table>";
+
+// Prints html table (see test.php in tests folder)
 ```
 
 ## Examples
