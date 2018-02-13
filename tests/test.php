@@ -14,7 +14,7 @@ use PHPLoan\Loan;
 
 $loan = new Loan;
 
-// function calulatePrincipal( $P , $r, $n )
+// function calculateMonthlyPayment( $P , $r, $n )
 $result = $loan->calculateMonthlyPayment( 60000 , 9, 360 );
 echo number_format($result, 2, ".", ",") . PHP_EOL;
 
@@ -29,7 +29,7 @@ $result = $loan->calculateNumPayments( 60000, 9, 482.77357 );
 echo $result . PHP_EOL;
 
 
-// function getSchedule( $P , $r, $n )
+// function getSchedule( $P, $r, $n )
 $schedule = $loan->getSchedule( 60000, 9, 12 );
 
 echo "<table>";
