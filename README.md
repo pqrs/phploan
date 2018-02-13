@@ -29,18 +29,24 @@ $A    Monthly payment amount
 
 Calculates the amount of every monthly payment based on the loan principal, interest rate and number of payments.
 
-```
+``` php
+$loan = new Loan;
+
 $result = $loan->calculateMonthlyPayment( 60000 , 9, 360 );
 echo number_format($result, 2, ".", ",") . PHP_EOL;
+
+// Prints 482.77
 ```
 
-Prints **482.77**
+
 
 **function calculatePrincipal( $n, $r, $A )**
 
 Calculates the loan principal based on the number of payments, interest rate and payment amount.
 
-```
+``` php
+$loan = new Loan;
+
 $result = $loan->calculatePrincipal( 360, 9, 482.77357 );
 echo number_format($result, 2, ".", ",") . PHP_EOL;
 
@@ -52,7 +58,9 @@ Prints *60,000.00*
 
 Calculates the number of payments based on the principal, interest rate and payment amount.
 
-```
+``` php
+$loan = new Loan;
+
 $result = $loan->calculateNumPayments( 60000, 9, 482.77357 );
 echo $result . PHP_EOL;
 ```
@@ -64,6 +72,8 @@ Prints *360*
 Returns an object with the loan payment schedule.
 
 ``` php
+$loan = new Loan;
+
 $schedule = $loan->getSchedule( 60000, 9, 12 );
 
 echo "<table>";
