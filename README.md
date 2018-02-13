@@ -14,6 +14,14 @@ Also provides a method to return the loan payment schedule.
 git clone https://github.com/pqrs/phploan.git
 ```
 
+Then add to your php code:
+
+``` php
+require_once __DIR__ . '/vendor/autoload.php';   // Autoload files using Composer autoload
+
+use PHPLoan\Loan;
+```
+
 ## Usage
 
 ```
@@ -37,8 +45,6 @@ echo number_format($result, 2, ".", ",") . PHP_EOL;
 
 // Prints 482.77
 ```
-
-
 
 **function calculatePrincipal( $n, $r, $A )**
 
