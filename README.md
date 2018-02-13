@@ -17,7 +17,7 @@ git clone https://github.com/pqrs/phploan.git
 ## Usage
 
 ```
-* Variables nomenclature*
+Variables nomenclature
 
 $P    Principal (loan amount)
 $r    Annual interest rate
@@ -25,19 +25,19 @@ $n    Number of payments (months)
 $A    Monthly payment amount
 ```
 
-*function calculateMonthlyPayment( $P , $r, $n )*
+**function calculateMonthlyPayment( $P , $r, $n )**
 
 Calculates the amount of every monthly payment based on the loan principal, interest rate and number of payments.
 
-*function calculatePrincipal( $n, $r, $A )*
+**function calculatePrincipal( $n, $r, $A )**
 
 Calculates the loan principal based on the number of payments, interest rate and payment amount.
 
-*function calculateNumPayments( $P, $r, $A )*
+**function calculateNumPayments( $P, $r, $A )**
 
 Calculates the number of payments based on the principal, interest rate and payment amount.
 
-*function getSchedule( $P, $r, $n )*
+**function getSchedule( $P, $r, $n )**
 
 Returns an object with the loan payment schedule.
 
